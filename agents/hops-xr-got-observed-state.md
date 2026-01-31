@@ -1,5 +1,5 @@
 ---
-name: hops-got-observed-state
+name: hops-xr-got-observed-state
 description: |
   Delegate to this agent when:
   - Setting up or modifying the $state namespace in Go templates
@@ -10,7 +10,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-observed-state
+  - hops-xr-got-observed-state
 ---
 
 When invoked, follow this checklist:

@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-patterns
+name: hops-xr-got-template-patterns
 description: |
   Advanced Go template patterns including forProvider pass-through, Helm values
   override/merge, Kubernetes Object pattern, multi-provider setup, and PodIdentity usage.

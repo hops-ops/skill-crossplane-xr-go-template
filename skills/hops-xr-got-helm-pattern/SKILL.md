@@ -1,5 +1,5 @@
 ---
-name: hops-got-helm-pattern
+name: hops-xr-got-helm-pattern
 description: |
   Helm-only XRD pattern: flat schema design, inline defaults, lightweight templates,
   state management, E2E testing with InjectedIdentity, and AWS wrapper pattern.

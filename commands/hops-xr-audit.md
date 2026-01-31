@@ -12,19 +12,19 @@ Run as many agents in parallel as possible to maximize speed.
 
 ### Batch 1: Core Template Concerns (run in parallel)
 
-**Delegate to `hops-got-template-structure`:** Review template file organization. Are files named following conventions? Is the $state namespace pattern used cleanly? Are there files that should be split or merged? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-template-structure`:** Review template file organization. Are files named following conventions? Is the $state namespace pattern used cleanly? Are there files that should be split or merged? Rate: Good / Needs Work / Missing.
 
-**Delegate to `hops-got-observed-state`:** Review state-init and state-compute. Is state well-organized? Are observed values extracted with proper nil-safety? Are there extracted values that aren't used? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-observed-state`:** Review state-init and state-compute. Is state well-organized? Are observed values extracted with proper nil-safety? Are there extracted values that aren't used? Rate: Good / Needs Work / Missing.
 
-**Delegate to `hops-got-template-patterns`:** Review resource templates. Are the right patterns used for each resource type? Is forProvider pass-through correct? Are cross-resource references clean? Are provider configs properly threaded? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-template-patterns`:** Review resource templates. Are the right patterns used for each resource type? Is forProvider pass-through correct? Are cross-resource references clean? Are provider configs properly threaded? Rate: Good / Needs Work / Missing.
 
-**Delegate to `hops-got-template-simplification`:** Audit templates for unnecessary complexity. Are there unused variables, unnecessary guards, single-use intermediates, or fields that could be made required? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-template-simplification`:** Audit templates for unnecessary complexity. Are there unused variables, unnecessary guards, single-use intermediates, or fields that could be made required? Rate: Good / Needs Work / Missing.
 
 ### Batch 2: Cross-Cutting Concerns (run in parallel)
 
 **Delegate to `hops-xr-labels`:** Review labels and tags. Are they applied consistently across ALL resources? Do all AWS resources have Name tags? Are defaults well-chosen? Is the merge pattern correct? Rate: Good / Needs Work / Missing.
 
-**Delegate to `hops-got-status-output`:** Review status output design. Does status expose the right values? Are there echoed inputs? Is the anti-corruption layer effective? Are types specific enough? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-status-output`:** Review status output design. Does status expose the right values? Are there echoed inputs? Is the anti-corruption layer effective? Are types specific enough? Rate: Good / Needs Work / Missing.
 
 **Delegate to `hops-xr-external-names`:** Review import support. Are all importable resources covered? Is the import example complete? Are external name formats documented? Rate: Good / Needs Work / Missing.
 
@@ -50,7 +50,7 @@ Run as many agents in parallel as possible to maximize speed.
 
 ### Conditional
 
-**Delegate to `hops-got-helm-pattern`:** Only if this is a Helm-only XRD. Is the flat schema appropriate? Are inline defaults correct? Rate: Good / Needs Work / Missing.
+**Delegate to `hops-xr-got-helm-pattern`:** Only if this is a Helm-only XRD. Is the flat schema appropriate? Are inline defaults correct? Rate: Good / Needs Work / Missing.
 
 ## Compile Results
 
@@ -60,12 +60,12 @@ After all agents report back, compile their findings into a single report:
 
 | Domain | Agent | Score | Key Finding |
 |--------|-------|-------|-------------|
-| Template Structure | `hops-got-template-structure` | Good/Needs Work/Missing | ... |
-| Observed State | `hops-got-observed-state` | ... | ... |
-| Template Patterns | `hops-got-template-patterns` | ... | ... |
-| Template Simplification | `hops-got-template-simplification` | ... | ... |
+| Template Structure | `hops-xr-got-template-structure` | Good/Needs Work/Missing | ... |
+| Observed State | `hops-xr-got-observed-state` | ... | ... |
+| Template Patterns | `hops-xr-got-template-patterns` | ... | ... |
+| Template Simplification | `hops-xr-got-template-simplification` | ... | ... |
 | Labels & Tags | `hops-xr-labels` | ... | ... |
-| Status Output | `hops-got-status-output` | ... | ... |
+| Status Output | `hops-xr-got-status-output` | ... | ... |
 | External Names | `hops-xr-external-names` | ... | ... |
 | Usages | `hops-xr-usages` | ... | ... |
 | Testing | `hops-xr-testing` | ... | ... |

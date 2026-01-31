@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-patterns
+name: hops-xr-got-template-patterns
 description: |
   Delegate to this agent when:
   - Writing forProvider pass-through patterns in resource templates
@@ -11,7 +11,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-template-patterns
+  - hops-xr-got-template-patterns
 ---
 
 When invoked, follow this checklist:

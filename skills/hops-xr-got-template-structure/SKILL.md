@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-structure
+name: hops-xr-got-template-structure
 description: |
   Template file organization, file naming conventions, $state namespace pattern,
   reconciliation loop mechanics, and resource template structure for Crossplane XRDs.

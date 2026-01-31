@@ -7,7 +7,7 @@ Systematically audit and simplify all Go templates in the project.
 Capture the current rendered output for comparison:
 
 ```bash
-make render:all 2>&1 | tee /tmp/hops-got-simplify-before.txt
+make render:all 2>&1 | tee /tmp/hops-xr-got-simplify-before.txt
 ```
 
 Also run tests to establish baseline:
@@ -18,7 +18,7 @@ make test
 
 ## Step 2: Audit Templates
 
-Read all template files and identify simplification opportunities. Delegate to the **`hops-got-template-simplification`** agent, which knows these patterns:
+Read all template files and identify simplification opportunities. Delegate to the **`hops-xr-got-template-simplification`** agent, which knows these patterns:
 
 1. **Unused variables** — Variables defined but never referenced
 2. **Required field guards** — `| default` on fields that are required in the schema
@@ -40,8 +40,8 @@ For each simplification:
 After all changes:
 
 ```bash
-make render:all 2>&1 | tee /tmp/hops-got-simplify-after.txt
-diff /tmp/hops-got-simplify-before.txt /tmp/hops-got-simplify-after.txt
+make render:all 2>&1 | tee /tmp/hops-xr-got-simplify-after.txt
+diff /tmp/hops-xr-got-simplify-before.txt /tmp/hops-xr-got-simplify-after.txt
 ```
 
 The diff should be empty (no behavioral changes).

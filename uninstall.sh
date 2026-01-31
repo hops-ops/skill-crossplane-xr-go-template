@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Uninstall hops-got-crossplane-xr from ~/.claude/ (global) or .claude/ (local)
+# Uninstall hops-xr-got-guidance from ~/.claude/ (global) or .claude/ (local)
 #
 # Usage:
 #   ./uninstall.sh          # uninstall from ~/.claude/
@@ -13,17 +13,17 @@ if [[ "${1:-}" == "--local" ]]; then
   TARGET="$(pwd)/.claude"
 fi
 
-SKILLS=(hops-got-crossplane-xr hops-xr-core hops-got-template-structure hops-got-observed-state
-  hops-got-template-patterns hops-got-status-output hops-xr-labels hops-xr-external-names hops-xr-usages
-  hops-got-template-simplification hops-got-helm-pattern hops-xr-testing hops-xr-observed-resources
+SKILLS=(hops-xr-got-guidance hops-xr-core hops-xr-got-template-structure hops-xr-got-observed-state
+  hops-xr-got-template-patterns hops-xr-got-status-output hops-xr-labels hops-xr-external-names hops-xr-usages
+  hops-xr-got-template-simplification hops-xr-got-helm-pattern hops-xr-testing hops-xr-observed-resources
   hops-xr-makefile hops-xr-github-workflows hops-xr-renovate hops-xr-gitops-package hops-xr-readme)
 
-AGENTS=(hops-xr-orchestrator hops-got-template-structure hops-got-observed-state hops-got-template-patterns
-  hops-got-status-output hops-xr-labels hops-xr-external-names hops-xr-usages hops-got-template-simplification
-  hops-got-helm-pattern hops-xr-testing hops-xr-observed-resources hops-xr-makefile hops-xr-github-workflows
+AGENTS=(hops-xr-orchestrator hops-xr-got-template-structure hops-xr-got-observed-state hops-xr-got-template-patterns
+  hops-xr-got-status-output hops-xr-labels hops-xr-external-names hops-xr-usages hops-xr-got-template-simplification
+  hops-xr-got-helm-pattern hops-xr-testing hops-xr-observed-resources hops-xr-makefile hops-xr-github-workflows
   hops-xr-renovate hops-xr-gitops-package hops-xr-readme)
 
-COMMANDS=(hops-xr-new hops-xr-validate hops-xr-checklist hops-got-simplify hops-xr-audit)
+COMMANDS=(hops-crossplane hops-xr-new hops-xr-validate hops-xr-checklist hops-xr-got-simplify hops-xr-audit)
 
 # --- Dry run: show what will be removed ---
 

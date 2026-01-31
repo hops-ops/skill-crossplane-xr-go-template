@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Install hops-got-crossplane-xr to ~/.claude/ (global) or .claude/ (local)
+# Install hops-xr-got-guidance to ~/.claude/ (global) or .claude/ (local)
 #
 # Usage:
 #   ./install.sh          # install globally to ~/.claude/
@@ -16,7 +16,7 @@ fi
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo ""
-echo "Installing hops-got-crossplane-xr..."
+echo "Installing hops-xr-got-guidance..."
 echo ""
 
 for dir in skills agents commands; do

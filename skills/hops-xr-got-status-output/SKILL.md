@@ -1,5 +1,5 @@
 ---
-name: hops-got-status-output
+name: hops-xr-got-status-output
 description: |
   XRD status output design principles: exposing observed cloud resource values,
   anti-corruption layer pattern, and typed status field definitions.

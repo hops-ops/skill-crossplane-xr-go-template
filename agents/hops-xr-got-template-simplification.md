@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-simplification
+name: hops-xr-got-template-simplification
 description: |
   Delegate to this agent when:
   - Reducing template duplication or complexity
@@ -11,7 +11,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-template-simplification
+  - hops-xr-got-template-simplification
 ---
 
 When invoked, follow this checklist:

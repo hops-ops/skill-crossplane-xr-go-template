@@ -1,5 +1,5 @@
 ---
-name: hops-got-helm-pattern
+name: hops-xr-got-helm-pattern
 description: |
   Delegate to this agent when:
   - Building a Helm-only XRD (no raw cloud resources, just Helm releases)
@@ -10,7 +10,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-helm-pattern
+  - hops-xr-got-helm-pattern
 ---
 
 When invoked, follow this checklist:

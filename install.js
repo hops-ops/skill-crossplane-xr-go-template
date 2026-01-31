@@ -76,7 +76,7 @@ function install() {
 }
 
 try {
-  console.log("\nInstalling hops-got-crossplane-xr...\n");
+  console.log("\nInstalling hops-xr-got-guidance...\n");
   install();
 } catch (err) {
   console.error("Installation failed:", err.message);

@@ -4,17 +4,17 @@ const fs = require("fs");
 const path = require("path");
 
 const SKILL_DIRS = [
-  "skills/hops-got-crossplane-xr",
+  "skills/hops-xr-got-guidance",
   "skills/hops-xr-core",
-  "skills/hops-got-template-structure",
-  "skills/hops-got-observed-state",
-  "skills/hops-got-template-patterns",
-  "skills/hops-got-status-output",
+  "skills/hops-xr-got-template-structure",
+  "skills/hops-xr-got-observed-state",
+  "skills/hops-xr-got-template-patterns",
+  "skills/hops-xr-got-status-output",
   "skills/hops-xr-labels",
   "skills/hops-xr-external-names",
   "skills/hops-xr-usages",
-  "skills/hops-got-template-simplification",
-  "skills/hops-got-helm-pattern",
+  "skills/hops-xr-got-template-simplification",
+  "skills/hops-xr-got-helm-pattern",
   "skills/hops-xr-testing",
   "skills/hops-xr-observed-resources",
   "skills/hops-xr-makefile",
@@ -26,15 +26,15 @@ const SKILL_DIRS = [
 
 const AGENT_FILES = [
   "agents/hops-xr-orchestrator.md",
-  "agents/hops-got-template-structure.md",
-  "agents/hops-got-observed-state.md",
-  "agents/hops-got-template-patterns.md",
-  "agents/hops-got-status-output.md",
+  "agents/hops-xr-got-template-structure.md",
+  "agents/hops-xr-got-observed-state.md",
+  "agents/hops-xr-got-template-patterns.md",
+  "agents/hops-xr-got-status-output.md",
   "agents/hops-xr-labels.md",
   "agents/hops-xr-external-names.md",
   "agents/hops-xr-usages.md",
-  "agents/hops-got-template-simplification.md",
-  "agents/hops-got-helm-pattern.md",
+  "agents/hops-xr-got-template-simplification.md",
+  "agents/hops-xr-got-helm-pattern.md",
   "agents/hops-xr-testing.md",
   "agents/hops-xr-observed-resources.md",
   "agents/hops-xr-makefile.md",
@@ -45,10 +45,11 @@ const AGENT_FILES = [
 ];
 
 const COMMAND_FILES = [
+  "commands/hops-crossplane.md",
   "commands/hops-xr-new.md",
   "commands/hops-xr-checklist.md",
   "commands/hops-xr-validate.md",
-  "commands/hops-got-simplify.md",
+  "commands/hops-xr-got-simplify.md",
   "commands/hops-xr-audit.md",
 ];
 
@@ -101,7 +102,7 @@ function uninstall() {
 }
 
 try {
-  console.log("\nUninstalling hops-got-crossplane-xr...\n");
+  console.log("\nUninstalling hops-xr-got-guidance...\n");
   uninstall();
 } catch (err) {
   console.error("Uninstall failed:", err.message);

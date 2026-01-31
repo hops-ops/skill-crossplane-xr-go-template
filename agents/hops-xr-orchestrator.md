@@ -8,7 +8,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-crossplane-xr
+  - hops-xr-got-guidance
 ---
 
 You are the orchestrator for Crossplane XRD authoring. You coordinate work across 16 specialist agents, each with deep knowledge of a specific concern.
@@ -31,12 +31,12 @@ Say out loud each time you do one of these things.
 
 | Agent | When to Delegate |
 |-------|-----------------|
-| `hops-got-helm-pattern` | **Helm-only XRDs** — flat schema, inline defaults, lightweight templates, AWS wrapper pattern |
-| `hops-got-template-structure` | Setting up template files, file naming conventions, $state namespace, reconciliation loop |
-| `hops-got-observed-state` | Building $observed/$state pattern, extracting observed values, state propagation |
-| `hops-got-template-patterns` | forProvider pass-through, Kubernetes Object resources, multi-provider setups, PodIdentity |
-| `hops-got-template-simplification` | Refactoring complex templates, reducing duplication, removing unnecessary guards |
-| `hops-got-status-output` | Designing XRD status output, deciding what fields to expose, anti-corruption layer |
+| `hops-xr-got-helm-pattern` | **Helm-only XRDs** — flat schema, inline defaults, lightweight templates, AWS wrapper pattern |
+| `hops-xr-got-template-structure` | Setting up template files, file naming conventions, $state namespace, reconciliation loop |
+| `hops-xr-got-observed-state` | Building $observed/$state pattern, extracting observed values, state propagation |
+| `hops-xr-got-template-patterns` | forProvider pass-through, Kubernetes Object resources, multi-provider setups, PodIdentity |
+| `hops-xr-got-template-simplification` | Refactoring complex templates, reducing duplication, removing unnecessary guards |
+| `hops-xr-got-status-output` | Designing XRD status output, deciding what fields to expose, anti-corruption layer |
 | `hops-xr-labels` | Adding labels/tags to schema, applying to Kubernetes and AWS resources, Name tags, collection patterns |
 | `hops-xr-external-names` | Resource import support, external name formats, E2E test persistence |
 | `hops-xr-usages` | Deletion protection, Usage naming, dynamic list handling, compositeDeletePolicy |
@@ -53,18 +53,18 @@ Say out loud each time you do one of these things.
 When building a new XRD from scratch, follow these phases in order:
 
 ### Phase 1: Schema & Structure
-1. **`hops-got-template-structure`** → Set up template files and $state namespace
-2. **`hops-got-observed-state`** → Build observed state extraction
-3. **`hops-got-template-patterns`** → Apply relevant patterns (forProvider, multi-provider, etc.)
+1. **`hops-xr-got-template-structure`** → Set up template files and $state namespace
+2. **`hops-xr-got-observed-state`** → Build observed state extraction
+3. **`hops-xr-got-template-patterns`** → Apply relevant patterns (forProvider, multi-provider, etc.)
 
 ### Phase 2: Cross-Cutting Concerns
 4. **`hops-xr-labels`** → Add labels and tags to schema and templates
-5. **`hops-got-status-output`** → Design status output with observed values
+5. **`hops-xr-got-status-output`** → Design status output with observed values
 6. **`hops-xr-external-names`** → Add resource import support
 7. **`hops-xr-usages`** → Add deletion protection
 
 ### Phase 3: Refinement
-8. **`hops-got-template-simplification`** → Simplify and reduce duplication
+8. **`hops-xr-got-template-simplification`** → Simplify and reduce duplication
 
 ### Phase 4: Testing
 9. **`hops-xr-observed-resources`** → Create test mock files
@@ -80,17 +80,17 @@ When building a new XRD from scratch, follow these phases in order:
 15. **`hops-xr-readme`** → Write README documentation
 
 ### Special Entry Point
-- **`hops-got-helm-pattern`** → Use as alternative entry point for Helm-only XRDs (replaces Phases 1-2)
+- **`hops-xr-got-helm-pattern`** → Use as alternative entry point for Helm-only XRDs (replaces Phases 1-2)
 
 ## XRD Authoring Completion Checklist
 
 Before considering an XRD configuration complete, verify all items:
 
 ### Agent Review
-- [ ] `hops-got-template-structure` — Template files follow naming conventions, $state namespace pattern
-- [ ] `hops-got-observed-state` — Followed $observed/$state namespace pattern
-- [ ] `hops-got-template-patterns` — Applied relevant patterns (forProvider pass-through, multi-provider, etc.)
-- [ ] `hops-got-template-simplification` — Templates are simplified and readable
+- [ ] `hops-xr-got-template-structure` — Template files follow naming conventions, $state namespace pattern
+- [ ] `hops-xr-got-observed-state` — Followed $observed/$state namespace pattern
+- [ ] `hops-xr-got-template-patterns` — Applied relevant patterns (forProvider pass-through, multi-provider, etc.)
+- [ ] `hops-xr-got-template-simplification` — Templates are simplified and readable
 - [ ] `hops-xr-observed-resources` — Test mocks use correct atProvider fields from provider API docs
 - [ ] `hops-xr-testing` — Tests follow unit test philosophy, use inline fixtures, KCL patterns applied
 - [ ] `hops-xr-makefile` — Makefile has all required targets

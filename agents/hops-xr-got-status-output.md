@@ -1,5 +1,5 @@
 ---
-name: hops-got-status-output
+name: hops-xr-got-status-output
 description: |
   Delegate to this agent when:
   - Designing or modifying XRD status fields
@@ -10,7 +10,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-status-output
+  - hops-xr-got-status-output
 ---
 
 When invoked, follow this checklist:

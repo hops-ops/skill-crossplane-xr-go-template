@@ -1,5 +1,5 @@
 ---
-name: hops-got-observed-state
+name: hops-xr-got-observed-state
 description: |
   Single $state namespace pattern for managing observed state, spec defaults,
   computed state, and status output in Go templates.

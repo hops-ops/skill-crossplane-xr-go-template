@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-structure
+name: hops-xr-got-template-structure
 description: |
   Delegate to this agent when:
   - Creating a new XRD configuration from scratch
@@ -10,7 +10,7 @@ description: |
 model: sonnet
 skills:
   - hops-xr-core
-  - hops-got-template-structure
+  - hops-xr-got-template-structure
 ---
 
 When invoked, follow this checklist:

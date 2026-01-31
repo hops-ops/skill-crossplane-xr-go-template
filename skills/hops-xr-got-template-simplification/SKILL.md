@@ -1,5 +1,5 @@
 ---
-name: hops-got-template-simplification
+name: hops-xr-got-template-simplification
 description: |
   Template simplification patterns: making fields required, removing unnecessary guards,
   collapsing intermediate variables, simplifying observed-value extraction, and refactoring checklist.
