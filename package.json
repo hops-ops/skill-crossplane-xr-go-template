@@ -1,0 +1,30 @@
+{
+  "name": "@hops-ops/skill-hops-xr-got-guidance",
+  "version": "1.0.0",
+  "description": "Claude Code multi-agent skill system for authoring Crossplane XRs with Go templates",
+  "author": "hops-ops",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hops-ops/skill-hops-xr-got-guidance.git"
+  },
+  "keywords": [
+    "claude-code",
+    "claude-code-skill",
+    "crossplane",
+    "xrd",
+    "go-templates",
+    "infrastructure-as-code"
+  ],
+  "scripts": {
+    "postinstall": "node install.js",
+    "preuninstall": "node uninstall.js"
+  },
+  "files": [
+    "skills/",
+    "agents/",
+    "commands/",
+    "install.js",
+    "uninstall.js"
+  ]
+}
